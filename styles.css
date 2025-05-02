@@ -1,10 +1,31 @@
-.qr-container{
+/* General container styling */
+.qr-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #f0f4f8; /* Light background for contrast */
     padding: 20px;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+/* Style for the QR code wrapper */
+.qr-code-wrapper {
+    display: flex; /* Arrange QR codes side by side */
+    gap: 30px; /* Add spacing between the QR codes */
+    justify-content: center; /* Center the QR codes horizontally */
+    align-items: center; /* Align the QR codes vertically */
+    margin-top: 20px; /* Add spacing above the QR codes */
+}
+
+/* Shared styles for both QR codes */
+.qr-code-wrapper img {
+    max-width: 350px;
+    max-height: 350px; /* Set a consistent size for the QR codes */
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }

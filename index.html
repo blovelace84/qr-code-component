@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="styles.css">
   
   <title>Frontend Mentor | QR code component</title>
 
@@ -15,11 +15,17 @@
 </head>
 <body>
   <div class="qr-container">
-    <p>Scan the Qr Code Here:</p>
-    <!-- Desktop version of QR code -->
-    <img src="design/desktop-design.jpg" alt="Desktop version of QR code">
-    <!-- Mobile version of QR code -->
-    <img src="design/mobile-design.jpg" alt="Mobile version of QR code">
- </div>
+    <p>Scan the QR Code Here:</p>
+    <div class="qr-code-wrapper">
+        <div class="desktop-design">
+            <!-- Desktop version of QR code -->
+            <img src="design/desktop-design.jpg" alt="Desktop version of QR code">
+        </div>
+        <div class="mobile-design">
+            <!-- Mobile version of QR code -->
+            <img src="design/mobile-design.jpg" alt="Mobile version of QR code">
+        </div>
+    </div>
+</div>
 </body>
 </html>
